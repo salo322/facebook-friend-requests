@@ -7,3 +7,5 @@ let lengths = $('.bl').children();
 let num = lengths.length;
 console.log(num);
 chrome.storage.local.set({leng: num});
+
+
