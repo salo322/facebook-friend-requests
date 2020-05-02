@@ -86,3 +86,18 @@ img{
     width:35px;
     border-radius: 20px;
 }
+.activeB{
+    height:20px;
+    width:60px;
+    border-top: 1px solid red;
+    border-right: 1px solid red;
+    border-bottom: 1px solid red;
+    border-left: 5px  solid red;
+    border-radius: 5px;
+    
+}
+.flexB{
+    display: flex;
+    justify-content: space-between;
+    margin:0 20%;
+}
