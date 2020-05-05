@@ -1,10 +1,29 @@
 chrome.storage.local.get(['friends','leng'],function(result) {
    $(".ul_list").html(result.friends);
-   $('.userNum').html(result.leng)
-  });
+   $('.userNum').html(result.leng);
 
-  chrome.storage.onChanged.addListener(changes => {
-   if (changes.friends) {
+   
+
+  });
+  
+
+ let button =  document.querySelector('.activeB');
+ button.addEventListener('click', function(){
+
+   if (button.value === "inactive") {
+       button.value = 'active';
+       chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+       chrome.tabs.sendMessage(tabs[0].id, {greeting: "active"})
     
+      });
+        
+   } else {
+       button.value = 'inactive'
    }
-});
+ })
+
+
+
+  
+   
+ 

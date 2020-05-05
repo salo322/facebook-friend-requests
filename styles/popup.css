@@ -69,13 +69,13 @@ body{
 .ul_list li{
     list-style-type: none;
 }
-
+.bv{
+    display: none;
+}
 .bu{
     display:none;
 }
-.bp{
-    display:none;
-}
+
 .bo{
     text-decoration: none;
     color:#000000;
