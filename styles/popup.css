@@ -12,9 +12,9 @@ body{
     background:#4267b2;
 }
 .settings{
-    height:30px;
-    width:30px;
-    margin:2%;
+    height:40px;
+    width:40px;
+    margin:1% 85%;
     cursor:pointer;
 }
 .current{
@@ -33,11 +33,11 @@ body{
     margin: 1% 25%;
     background:#0779e4;
     border-radius: 25px;
-    width:70px;
+    width:80px;
     color:#ffffff;
 }
 .active{
-    margin:0 13%;
+    margin:-2% 10%;
 }
 
 .flex_container{
@@ -76,7 +76,7 @@ body{
     display:none;
 }
 
-.bo{
+.bp{
     text-decoration: none;
     color:#000000;
     font-size: 13px;

@@ -11,14 +11,16 @@ chrome.storage.local.get(['friends','leng'],function(result) {
  button.addEventListener('click', function(){
 
    if (button.value === "inactive") {
-       button.value = 'active';
+       button.value = 'active'; 
+     
        chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
        chrome.tabs.sendMessage(tabs[0].id, {greeting: "active"})
     
       });
         
    } else {
-       button.value = 'inactive'
+       button.value = 'inactive';
+       
    }
  })
 
