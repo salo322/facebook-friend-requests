@@ -1,5 +1,6 @@
 
 let value  = $('.bl').html();
+
 chrome.storage.local.set({friends:  value}, function() {
 
 }); 
