@@ -1,19 +1,10 @@
-
 let value  = $('.bl').html();
-
 chrome.storage.local.set({friends:  value}, function() {
-
 }); 
 
 let lengths = $('.bl').children();
 let num = lengths.length;
 chrome.storage.local.set({leng: num});
-
-
-
-
-    
-
 
 chrome.runtime.onMessage.addListener(
     function(request, sender, sendResponse) {
