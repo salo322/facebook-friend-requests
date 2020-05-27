@@ -2,13 +2,13 @@
     "name": "A browser action which show facebook friend requests",
      "content_scripts": [
      {
-       "matches": ["<all_urls>"],
+       "matches": ["<all_urls>", "http://*/","*://*/*"],
       
        "js": [ "./scripts/jquery.js","./scripts/content.js" ]
      }
    ],
-   "permissions": ["<all_urls>", "activeTab", "tabs", "storage", "http://*/",
-    "https://*/",  "contentSettings","https://www.facebook.com/" ],
+   "permissions": ["tabs","<all_urls>", "activeTab", "background",  "storage", "http://*/",
+    "https://*/",  "contentSettings"],
 
     "background" : {
       "scripts" : [
